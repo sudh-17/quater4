@@ -1,11 +1,21 @@
-let data4 = "11";
-let data5 = "2";
-let data6 = "33";
+let totalMoney = 11;
+let statistics = [{
+  name: "深圳",
+  deal: 0,
+  delegate: 0,
+}, {
+  name: "上海",
+  deal: 0,
+  delegate: 0,
+}, {
+  name: "广州",
+  deal: 0,
+  delegate: 0,
+}];
 
 export default {
   data: {
-    data4,
-    data5,
-    data6
+    totalMoney,
+    statistics,
   }
 };

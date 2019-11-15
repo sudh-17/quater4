@@ -1,15 +1,15 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import rightApi from './api/right-api'
-import leftApi from './api/left-api'
+import Vue from "vue";
+import App from "./App.vue";
+import router from "./router";
+import rightApi from "./api/right-api";
+import leftApi from "./api/left-api";
 
-Vue.config.productionTip = false
+Vue.config.productionTip = false;
 
-const app = new  Vue({
-  mixins: [rightApi, leftApi],
+const app = new Vue({
+  mixins: [leftApi, rightApi],
   router,
-  render: h => h(App),
-}).$mount('#app')
+  render: h => h(App)
+}).$mount("#app");
 
-window.app = app
+window.app = app;
