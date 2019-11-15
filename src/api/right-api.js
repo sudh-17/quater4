@@ -1,11 +1,11 @@
-let data5 = "11";
-let data2 = "2";
-let data3 = "33";
+let data4 = "11";
+let data5 = "2";
+let data6 = "33";
 
 export default {
   data: {
+    data4,
     data5,
-    data2,
-    data3
+    data6
   }
 };

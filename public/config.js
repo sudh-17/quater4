@@ -1,7 +1,5 @@
-let app = window.app;
-// app.a = "hello world";
+let app = window.app
 
 setInterval(() => {
-  app.a = Math.random() * 100
-  app.person = Math.random() * 100
+  app.openAccount = Math.random() * 100
 }, 1000)

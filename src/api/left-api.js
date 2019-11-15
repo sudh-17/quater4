@@ -1,11 +1,17 @@
-let data1 = "11";
-let data2 = "2";
-let data3 = "33";
-
+let openAccount = 10000
+let events = [{
+  name: "告警",
+  count: 100,
+}, {
+  name: "严重",
+  count: 100,
+}, {
+  name: "信息",
+  count: 100,
+}, ] 
 export default {
   data: {
-    data1,
-    data2,
-    data3
+    openAccount,
+    events
   }
 };
