@@ -1,9 +1,9 @@
 /* eslint-disable */
 // app = window.app;
 
-function fetchLeft() {
-  console.log('fething left ...')
-  app.openAccount = Math.random() * 100;
+function fetchEvent() {
+  console.log('fething event ...')
+  app.eventCount = Math.random() * 100;
   app.events = [
     {
       name: "告警",

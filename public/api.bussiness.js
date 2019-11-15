@@ -1,8 +1,8 @@
 /* eslint-disable */
 // app = window.app;
 
-function fetchRight() {
-  console.log('fething right ...')
+function fetchBussiness() {
+  console.log('fething bussniess ...')
   app.totalMoney = Math.random() * 100;
   app.statistics = [
     {

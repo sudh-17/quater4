@@ -8,20 +8,20 @@ function timer(callback) {
 }
 
 function init() {
-  if (window.location.hash === "#/left") {
-    interval = timer(fetchLeft);
-  } else if (window.location.hash === "#/right") {
-    interval = timer(fetchRight);
+  if (window.location.hash === "#/eventView") {
+    interval = timer(fetchEvent);
+  } else if (window.location.hash === "#/bussinessView") {
+    interval = timer(fetchBussiness);
   }
 }
 
 function onPageChange() {
   window.onhashchange = function() {
     clearInterval(interval);
-    if (window.location.hash === "#/left") {
-      interval = timer(fetchLeft);
-    } else if (window.location.hash === "#/right") {
-      interval = timer(fetchRight);
+    if (window.location.hash === "#/eventView") {
+      interval = timer(fetchEvent);
+    } else if (window.location.hash === "#/bussinessView") {
+      interval = timer(fetchBussiness);
     }
   };
 }

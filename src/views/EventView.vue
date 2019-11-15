@@ -2,18 +2,18 @@
   <div class="wrapper">
     <div class="counter">
       <div class="counter-title">
-        <label>开户数: </label>
+        <label>总事件数: </label>
       </div>
       <div class="counter-val">
-        <span>{{ Math.trunc(openAccount).toLocaleString() }}</span>
+        <span>{{ Math.trunc(eventCount).toLocaleString() }}</span>
       </div>
     </div>
     <div class="events">
       <ul class="list">
         <li v-for="(item, i) in events" :key="i">
           <div class="item-wrapper">
-            <label for="" class="item-text">{{item.name}}: </label>
-            <span class="item-val">{{item.count}}</span>
+            <label for="" class="item-text">{{ item.name }}: </label>
+            <span class="item-val">{{ item.count }}</span>
           </div>
         </li>
       </ul>
@@ -24,10 +24,10 @@
 <script>
 export default {
   computed: {
-    openAccount() {
-      return this.$root.openAccount;
+    eventCount() {
+      return this.$root.eventCount;
     },
-    events () {
+    events() {
       return this.$root.events;
     }
   }
@@ -66,7 +66,12 @@ export default {
     font-weight: bold;
     font-stretch: normal;
     letter-spacing: 2px;
-    background-image: -webkit-linear-gradient(bottom, #f1cc38, #f1cc38, #fcf9dc);
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #f1cc38,
+      #f1cc38,
+      #fcf9dc
+    );
     background-clip: text;
     -webkit-text-fill-color: transparent;
     background-size: 100% 100%;
@@ -89,5 +94,4 @@ export default {
     color: #ff0000;
   }
 }
-
 </style>

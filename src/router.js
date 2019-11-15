@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Left from './views/Left'
+import EventView from './views/EventView'
 
 Vue.use(Router)
 
@@ -12,17 +12,17 @@ export default new Router({
     {
 			path: '/',
 			name: '',
-      redirect: '/left'
+      redirect: '/eventView'
     },
 		{
-			path: '/left',
-			name: 'left',
-			component: Left,
+			path: '/eventView',
+			name: 'eventView',
+			component: EventView,
     },
 		{
-			path: '/right',
-			name: 'right',
-			component: () => import(/* webpackChunkName: "right" */ './views/Right'),
+			path: '/bussinessView',
+			name: 'bussinessView',
+			component: () => import(/* webpackChunkName: "bussinessView" */ './views/BussinessView'),
     }
 	]
 })
