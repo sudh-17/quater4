@@ -1,18 +1,14 @@
 import Vue from 'vue'
 import App from './App.vue'
 import router from './router'
-import api from './api'
-import leftApi from './left-api'
+import rightApi from './api/right-api'
+import leftApi from './api/left-api'
 
 Vue.config.productionTip = false
 
 const app = new  Vue({
-  data: {
-    a: '123456',
-    b: '78910'
-  },
+  mixins: [rightApi, leftApi],
   router,
-  mixins: [api, leftApi],
   render: h => h(App),
 }).$mount('#app')
 
