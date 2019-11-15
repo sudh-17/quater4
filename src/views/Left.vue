@@ -1,36 +1,27 @@
 <template>
   <div class="wrapper">
     <div>
-      <!-- <p>{{name}}</p> -->
+      <p>{{data1}}</p>
     </div>
     <div>
-      <!-- <p>{{value}}</p> -->
+      <p>{{data2}}</p>
     </div>
   </div>
 </template>
 
 <script>
-import { leftApi, queue } from "../left-api";
-window.console.log(leftApi, queue);
-let comp = {};
 
 export default {
-  created() {
-    this.format();
-  },
   computed: {
-    ...comp
-  },
-  methods: {
-    format() {
-      Object.keys(queue).forEach(key => {
-        comp[key] = function() {
-          return this.$root[key];
-        };
-      });
+    data1 () {
+      return this.$root.data1
+    },
+    data2 () {
+      return this.$root.data2
     }
-  }
+  },
 };
+
 </script>
 
 <style>
