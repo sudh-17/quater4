@@ -2,7 +2,7 @@
 // app = window.app;
 
 function fetchRight() {
-  // console.log('fething right ...')
+  console.log('fething right ...')
   // app.openAccount = Math.random() * 100;
   // app.events = [
   //   {

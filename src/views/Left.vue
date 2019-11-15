@@ -73,6 +73,12 @@ export default {
     animation: masked-animation 2s infinite linear;
   }
 }
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 50px;
+}
 .item-wrapper {
   background: #fcf9dc;
   font-size: 24px;
