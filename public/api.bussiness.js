@@ -2,7 +2,7 @@
 // app = window.app;
 
 function fetchBussiness() {
-  console.log('fething bussniess ...')
+  console.log('fething bussniess data ...')
   app.totalMoney = Math.random() * 100;
   app.statistics = [
     {

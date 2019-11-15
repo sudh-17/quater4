@@ -2,7 +2,7 @@
 // app = window.app;
 
 function fetchEvent() {
-  console.log('fething event ...')
+  console.log('fething event data ...')
   app.eventCount = Math.random() * 100;
   app.events = [
     {
