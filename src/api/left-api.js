@@ -8,7 +8,8 @@ let events = [{
 }, {
   name: "信息",
   count: 100,
-}, ] 
+}]
+
 export default {
   data: {
     openAccount,
