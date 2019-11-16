@@ -9,20 +9,21 @@ export default new Router({
 		return { x: 0, y: 0 }
 	},
 	routes: [
-    {
+		{
 			path: '/',
 			name: '',
-      redirect: '/eventView'
-    },
+			redirect: '/eventView'
+		},
 		{
 			path: '/eventView',
 			name: 'eventView',
-			component: EventView,
-    },
+			component: EventView
+		},
 		{
 			path: '/bussinessView',
 			name: 'bussinessView',
-			component: () => import(/* webpackChunkName: "bussinessView" */ './views/BussinessView'),
-    }
+			component: () =>
+				import(/* webpackChunkName: "bussinessView" */ './views/BussinessView')
+		}
 	]
 })
